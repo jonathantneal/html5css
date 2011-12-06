@@ -1,0 +1,508 @@
+/*-----------------------------------------------------------------------------
+	HTML5 Presentational Requirements and Recommendations Guide
+	Last Updated: 2010-12-13
+	Reference: http://bit.ly/html5css
+-----------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------
+	Default values
+-----------------------------------------------------------------------------*/
+
+* {
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: none;
+	background-position: 0 0;
+	background-repeat: repeat;
+	border-color: #000;
+	border-style: none;
+	border-width: medium;
+	clear: none;
+	color: inherit;
+	content: normal;
+	cursor: inherit;
+	direction: ltr;
+	display: inline;
+	float: none;
+	font-size: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+	font-weight: inherit;
+	height: auto;
+	line-height: normal;
+	list-style-type: disc;
+	margin: 0;
+	max-height: none;
+	max-width: none;
+	min-height: 0;
+	min-width: 0;
+	outline: invert none medium;
+	overflow: visible;
+	padding: 0;
+	text-align: left;
+	text-decoration: none;
+	unicode-bidi: inherit;
+	vertical-align: baseline;
+	visibility: inherit;
+	white-space: inherit;
+	width: auto;
+}
+
+:rtl * {
+	direction: rtl;
+	text-align: right;
+}
+
+html {
+	font-size: medium;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	visibility: visible;
+	white-space: normal;
+}
+
+/*-----------------------------------------------------------------------------
+	Display types
+-----------------------------------------------------------------------------*/
+
+[hidden],
+audio:not([controls]),
+area,
+base,
+command,
+datalist,
+head,
+input[type=hidden],
+link,
+menu[type=context],
+meta,
+param,
+rp,
+script,
+source,
+style,
+title {
+	display: none;
+}
+
+:section,
+:heading,
+address,
+article,
+aside,
+blockquote,
+body,
+dd,
+details,
+div,
+dl,
+dt,
+figure,
+figcaption,
+footer,
+form,
+header,
+hr,
+html,
+legend,
+menu,
+nav,
+ol,
+p,
+pre,
+summary,
+ul {
+	display: block;
+}
+
+audio[controls],
+canvas,
+img:complete,
+video {
+	display: inline-block;
+}
+
+li {
+	display: list-item;
+}
+
+table {
+	display: table;
+}
+
+caption {
+	display: table-caption;
+}
+
+colgroup {
+	display: table-column-group;
+}
+
+col {
+	display: table-column;
+}
+
+thead {
+	display: table-header-group;
+}
+
+tbody {
+	display: table-row-group;
+}
+
+tfoot {
+	display: table-footer-group;
+}
+
+tr {
+	display: table-row;
+}
+
+td,
+th {
+	display: table-cell;
+}
+
+ruby {
+	display: ruby;
+}
+
+rt {
+	display: ruby-text;
+}
+
+/*-----------------------------------------------------------------------------
+	Margins and padding
+-----------------------------------------------------------------------------*/
+
+body {
+	margin: 8px;
+}
+
+dl,
+figure,
+menu,
+ol,
+p,
+pre,
+ul {
+	margin: 1em 0;
+}
+
+:any(dl, menu, ol, ul) :any(dl, menu, ul) {
+	margin: 0;
+}
+
+blockquote {
+	margin: 1em 40px;
+}
+
+details,
+menu,
+ol,
+ul {
+	padding: 0 0 0 40px;
+}
+
+:rtl details,
+:rtl menu,
+:rtl ol,
+:rtl ul {
+	padding: 0 40px 0 0;
+}
+
+fieldset {
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+dd {
+	margin: 0 0 0 40px;
+}
+
+:rtl dd {
+	margin: 0 40px 0 0;
+}
+
+h6,
+:heading(6) {
+	margin: 2.33em 0;
+}
+
+h5,
+:heading(5) {
+	margin: 1.67em 0;
+}
+
+h4,
+:heading(4) {
+	margin: 1.33em 0;
+}
+
+h3,
+:heading(3) {
+	margin: 1em 0;
+}
+
+h2,
+:heading(2) {
+	margin: 0.83em 0;
+}
+
+h1,
+:heading(1) {
+	margin: 0.67em 0;
+}
+
+th,
+td {
+	padding: 1px;
+}
+
+hr {
+	margin: 0.5em auto;
+}
+
+/*-----------------------------------------------------------------------------
+	Alignment
+-----------------------------------------------------------------------------*/
+
+sub {
+	vertical-align: sub;
+}
+
+sup {
+	vertical-align: super;
+}
+
+thead,
+tbody,
+tfoot,
+table > tr {
+	vertical-align: middle;
+}
+
+tr,
+td,
+th {
+	vertical-align: inherit;
+}
+
+caption,
+th {
+	text-align: center;
+}
+
+/*-----------------------------------------------------------------------------
+	Fonts and colors
+-----------------------------------------------------------------------------*/
+
+address,
+cite,
+dfn,
+em,
+i,
+var {
+	font-style: italic;
+}
+
+b,
+strong,
+th,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+
+small,
+sub,
+sup {
+	font-size: smaller;
+}
+
+h6,
+:heading(6) {
+	font-size: 0.67em;
+}
+
+h5,
+:heading(5) {
+	font-size: 0.83em;
+}
+
+h4,
+:heading(4) {
+	font-size: 1em;
+}
+
+h3,
+:heading(3) {
+	font-size: 1.17em;
+}
+
+h2,
+:heading(2) {
+	font-size: 1.5em;
+}
+
+h1,
+:heading(1) {
+	font-size: 2em;
+}
+
+sub,
+sup {
+	line-height: normal;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace;
+}
+
+:link {
+	color: #00F;
+}
+
+:visited {
+	color: #800080;
+}
+
+hr {
+	color: #808080;
+}
+
+mark {
+	background-color: #FF0;
+	color: #000;
+}
+
+/*-----------------------------------------------------------------------------
+	Punctuation and decorations
+-----------------------------------------------------------------------------*/
+
+[dir=ltr] {
+	direction: ltr;
+	unicode-bidi: embed;
+}
+
+[dir=rtl] {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+bdo[dir=ltr],
+bdo[dir=rtl] {
+	unicode-bidi: bidi-override;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+menu,
+ul {
+	list-style-type: disc;
+}
+
+:any(menu, ol, ul) :any(dl, menu, ul) {
+	list-style-type: circle;
+}
+
+:any(menu, ol, ul) :any(menu, ol, ul) :any(dl, menu, ul) {
+	list-style-type: square;
+}
+
+abbr[title] {
+	text-decoration: dotted underline;
+}
+
+del,
+s {
+	text-decoration: line-through;
+}
+
+:link,
+:visited,
+ins,
+u {
+	text-decoration: underline;
+}
+
+pre {
+	white-space: pre;
+}
+
+fieldset {
+	border: groove 2px ThreeDFace;
+}
+
+hr {
+	border-style: inset;
+	border-width: 1px;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 2px;
+	border-style: outset;
+}
+
+table,
+td,
+th {
+	border-color: #808080;
+}
+
+thead,
+tbody,
+tfoot,
+tr {
+	border-color: inherit;
+}
+
+td,
+th {
+	border-style: inset;
+}
+
+q:before {
+	content: open-quote;
+}
+
+q:after {
+	content: close-quote;
+}
+
+/*-----------------------------------------------------------------------------
+	Media
+-----------------------------------------------------------------------------*/
+
+audio[controls] {
+	height: 1em;
+}
+
+iframe {
+	border: 2px inset;
+}
+
+/*-----------------------------------------------------------------------------
+	Block inheritance
+-----------------------------------------------------------------------------*/
+
+table {
+	font-size: initial;
+	font-style: initial;
+	font-variant: initial;
+	font-weight: initial;
+	line-height: initial;
+	text-align: initial;
+	white-space: initial;
+}
