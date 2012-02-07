@@ -1,7 +1,8 @@
 /*-----------------------------------------------------------------------------
 	HTML5 Presentational Requirements and Recommendations Guide
-	Last Updated: 2010-12-13
+	Last Updated: 2012-02-06
 	Reference: http://bit.ly/html5css
+	Based on: http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#the-css-user-agent-style-sheet-and-presentational-hints
 -----------------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------------
@@ -198,14 +199,12 @@ blockquote {
 	margin: 1em 40px;
 }
 
-details,
 menu,
 ol,
 ul {
 	padding: 0 0 0 40px;
 }
 
-:rtl details,
 :rtl menu,
 :rtl ol,
 :rtl ul {
